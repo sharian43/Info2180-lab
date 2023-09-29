@@ -1,0 +1,117 @@
+body{
+    font-size: 18px;
+    color: #2d3748;
+    font-family: -apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+}
+/* -----------Layout-------------*/
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* -----------Header-------------*/
+header{
+    background-color: #63B3ED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-column: span 3;
+    padding: 10px;
+    
+}
+
+#header-img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+}
+
+header h1{
+    color: #ffffff;
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header p{
+    color: #ffffff;
+}
+
+/* -----------Blog post-------------*/
+.blog-post{
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+
+.blog-post h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+.post-info{
+    color: #718096;
+}
+
+#blog-img{
+    width: 200px; 
+    height: 150px; 
+    float: right; 
+    margin: 0px 0px 15px 15px; 
+}
+
+#blog-img1{
+    width: 200px; 
+    height: 150px; 
+    float: left; 
+    margin: 0px 15px 15px 0px; 
+}
+
+/* -----------Side bar-------------*/
+.sidebar{
+    padding: 50px;
+    grid-column: 2;
+}
+
+.s-about h3, .s-socials h3, .s-archive h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.s-socials h3, .s-archives h3{
+    color: #48BB78;
+    
+}
+
+.s-about{
+    background-color: #E2E8F0;
+    padding: 15px;
+    color: #000000;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #4299E1;
+}
+
+/* -----------Footer-------------*/
+footer{
+    background-color: #2c5282;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 10px;
+    grid-column: span 3;
+}
